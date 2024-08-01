@@ -1,0 +1,17 @@
+<%= form_with(model: poker_face) do |form| %>
+  <% if poker_face.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(poker_face.errors.count, "error") %> prohibited this poker_face from being saved:</h2>
+
+      <ul>
+        <% poker_face.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,15 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Poker faces</h1>
+
+<div id="poker_faces">
+  <% @poker_faces.each do |poker_face| %>
+    <%= poker_face.name %>
+
+    <p>
+      <%= link_to "Show this poker face", poker_face %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New poker face", new_poker_face_path %>

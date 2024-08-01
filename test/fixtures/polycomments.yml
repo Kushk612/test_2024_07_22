@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  content: MyText
+  commited: one
+  commited_type: Commited
+
+two:
+  content: MyText
+  commited: two
+  commited_type: Commited
